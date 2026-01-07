@@ -43,9 +43,9 @@ def test_transferability(source_model, target_models, data_loader, attack_fn, at
     
                              
     results = {
-        'source_success_rate': source_success / total,
-        'target_success_rates': {i: target_success[i] / total for i in range(len(target_models))},
-        'total_samples': total
+        : source_success / total,
+        : {i: target_success[i] / total for i in range(len(target_models))},
+        : total
     }
     
     return results
